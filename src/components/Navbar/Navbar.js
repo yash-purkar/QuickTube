@@ -14,7 +14,7 @@ export const Navbar = () => {
     setToggleNavbar(prev => !prev)
   }
   return (
-    <nav className='bg-[#191921] sticky top-0 left-0 right-0'>
+    <nav className='bg-[#191921] fixed top-0 left-0 right-0'>
       <div className='p-3 flex justify-between items-center  flex-wrap md:mx-5'>
         <div className="text-xl text-white flex items-center gap-5">
 

@@ -5,10 +5,10 @@ export const Home = ({ children }) => {
   return (
     <div className='grid  md:grid-cols-[245px,auto] '>
 
-      <div className="hidden md:block border-5 border-red-500 overflow-hidden relative" >
+      <div className="hidden md:block mt-14  relative" >
         <Sidebar />
       </div>
-      <div className='mx-2'>
+      <div className=''>
         {children}
       </div>
     </div>
