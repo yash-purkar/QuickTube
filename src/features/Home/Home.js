@@ -3,8 +3,9 @@ import { Sidebar } from '../../components/Sidebar/Sidebar'
 
 export const Home = ({ children }) => {
   return (
-    <div className='grid grid-cols-1 md:grid-cols-[17.9%,auto]'>
-      <div className="hidden md:block w-[20%]" >
+    <div className='grid  md:grid-cols-[243px,auto] '>
+
+      <div className="hidden md:block border-5 border-red-500 overflow-hidden relative" >
         <Sidebar />
       </div>
       <div className='mx-2'>

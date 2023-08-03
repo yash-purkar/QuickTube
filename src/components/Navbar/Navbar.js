@@ -1,5 +1,6 @@
 import React from 'react'
 import { AiOutlineMenu } from 'react-icons/ai'
+import { RxCross1 } from 'react-icons/rx'
 import { Sidebar } from '../Sidebar/Sidebar.js'
 import { useState } from 'react'
 
@@ -14,11 +15,15 @@ export const Navbar = () => {
       <h1 className='text-white text-2xl font-bold '>QuickTube</h1>
 
       <div className="text-xl text-white md:hidden">
-        <AiOutlineMenu onClick={handleToggleNavbar} className="cursor-pointer" />
+
+        {
+          !toggleNavbar ? <AiOutlineMenu onClick={handleToggleNavbar} className="cursor-pointer" /> : <RxCross1 onClick={handleToggleNavbar} className="cursor-pointer" />
+        }
+
       </div>
 
       {
-        toggleNavbar && <div className="h-screen md:hidden  w-full absolute top-14 left-0 transition ease-in duration-700">
+        toggleNavbar && <div className="h-screen md:hidden  w-full absolute top-14  left-0">
           <Sidebar />
         </div>
       }
